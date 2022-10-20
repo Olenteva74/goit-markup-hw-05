@@ -323,21 +323,23 @@ img {
 }
 .example-thumb {
     position: relative;
-
+    width: 100%;
 }
 .example-text {
     position: absolute;
     left: 0;
     bottom: 0;
-    width: 100%;
-    height: 70px;
+    width: 100%; 
+    height: 70px; 
+    display: flex;
+    justify-content: center; 
+    align-items: center;
     background-color: rgba(47, 48, 58, 0.8);
     color: var(--primeri-white-color);
     font-weight: 700;
     line-height: 1.14;
     text-align: center;
     text-transform: uppercase;
-    padding-top: 27px;
 }
 
 /* Team section */
@@ -518,13 +520,15 @@ img {
     width: 100%;
     height: 100%;
     background-color: rgba(33, 150, 243, 0.9);
-    transform: translateY(100%);
+    transform: translateY(101%);
     transition: transform 250ms var(--timing-function);
 
 } 
 .thumb-text {
     padding: 60px 24px; 
     align-content: center;
+    font-size: 18px;
+    line-height: 1.56;
     color: var(--primeri-white-color);
 }
 .portfolio-link:hover .portfolio-overlay,
@@ -594,7 +598,7 @@ img {
     color: var(--primeri-white-color);
     background-color: var(--adress-net-color);
     transform: scale(1);
-    transition: transform 250ms var(--timing-function), color 250ms var(--timing-function), backgroud-color 250ms var(--timing-function);
+    transition: transform 250ms var(--timing-function), backgroud-color 250ms var(--timing-function);
 }
 .footer-net .net-link:hover,
 .footer-net .net-link:focus {
